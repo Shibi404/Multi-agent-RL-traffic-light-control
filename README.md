@@ -113,8 +113,14 @@ cd Multi-agent-RL-traffic-light-control
 
 Create the environment from `environment.yml`:
 ```bash
-conda env create -f environment.yml
+conda create -n flow python=3.7.3 -y
 conda activate flow
+pip install \
+  scipy==1.1.0 lxml==4.4.1 six==1.11.0 path.py python-dateutil==2.7.3 \
+  tensorflow==1.15.2 setuptools==41.0.0 plotly==2.4.0 gym==0.14.0 \
+  pyprind==2.11.2 nose2==0.8.0 cached_property joblib==0.10.3 \
+  matplotlib==3.0.0 dill lz4 setproctitle psutil opencv-python \
+  boto3==1.10.45 pyarrow==0.16.0 ray==0.8.0 redis==3.5.3
 ```
 
 Install the repo:
